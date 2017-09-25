@@ -1,14 +1,14 @@
 package validate_test
 
 import (
-	"encoding/json"
-	"testing"
-
 	"io/ioutil"
+	"testing"
 
 	"github.com/go-openapi/spec"
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
+
+	"k8s.io/apimachinery/pkg/util/json"
 )
 
 type validateTest struct {
