@@ -28,20 +28,14 @@
             "five": {
                 "type": "string",
                 "default": "five"
-
             },
             "six": {
                 "type": "number",
                 "default": 6
             },
             "seven": {
-                "type":"object",
+                "type": "object",
                 "properties": {
-                    "alpha": {
-                        "type": "string",
-                        "pattern": "^[a-zA-Z0-9_]*$",
-                        "default": "alpha"
-                    },
                     "one": {
                         "type": "string",
                         "pattern": "^[a-zA-Z0-9_]*$",
@@ -67,14 +61,13 @@
                     "five": {
                         "type": "string",
                         "default": "five"
-
                     },
                     "six": {
                         "type": "number",
                         "default": 6
                     },
                     "seven": {
-                        "type":"object",
+                        "type": "object",
                         "properties": {
                             "alpha": {
                                 "type": "string",
@@ -142,21 +135,14 @@
                     "five": {
                         "type": "string",
                         "default": "five"
-
                     },
                     "six": {
                         "type": "number",
                         "default": 6
                     },
                     "seven": {
-                        "type":"object",
-                        "properties": {
-                            "alpha": {
-                                "type": "string",
-                                "pattern": "^[a-zA-Z0-9_]*$",
-                                "default": "alpha"
-                            }
-                        }
+                        "type": "string",
+                        "default": "seven"
                     },
                     "eight": {
                         "type": "integer",
@@ -206,74 +192,14 @@
                     "five": {
                         "type": "string",
                         "default": "five"
-
                     },
                     "six": {
                         "type": "number",
                         "default": 6
                     },
                     "seven": {
-                        "type":"object",
-                        "properties": {
-                            "alpha": {
-                                "type": "string",
-                                "pattern": "^[a-zA-Z0-9_]*$",
-                                "default": "alpha"
-                            },
-                            "one": {
-                                "type": "string",
-                                "pattern": "^[a-zA-Z0-9_]*$",
-                                "default": "foo_123"
-                            },
-                            "two": {
-                                "type": "number",
-                                "maximum": 10,
-                                "default": 2
-                            },
-                            "three": {
-                                "type": "string",
-                                "enum": [
-                                    "foo",
-                                    "bar",
-                                    "baz"
-                                ]
-                            },
-                            "four": {
-                                "type": "string",
-                                "maxLength": 5
-                            },
-                            "five": {
-                                "type": "string",
-                                "default": "five"
-
-                            },
-                            "six": {
-                                "type": "number",
-                                "default": 6
-                            },
-                            "seven": {
-                                "type":"object",
-                                "properties": {
-                                    "alpha": {
-                                        "type": "string",
-                                        "pattern": "^[a-zA-Z0-9_]*$",
-                                        "default": "alpha"
-                                    }
-                                }
-                            },
-                            "eight": {
-                                "type": "integer",
-                                "default": 8
-                            },
-                            "nine": {
-                                "type": "boolean",
-                                "default": true
-                            },
-                            "ten": {
-                                "type": "string",
-                                "default": "10"
-                            }
-                        }
+                        "type": "string",
+                        "default": "seven"
                     },
                     "eight": {
                         "type": "integer",
@@ -288,67 +214,8 @@
                         "default": "10"
                     },
                     "eleven": {
-                        "type": "object",
-                        "properties": {
-                            "alpha": {
-                                "type": "string",
-                                "pattern": "^[a-zA-Z0-9_]*$",
-                                "default": "alpha"
-                            },
-                            "one": {
-                                "type": "string",
-                                "pattern": "^[a-zA-Z0-9_]*$",
-                                "default": "foo_123"
-                            },
-                            "two": {
-                                "type": "number",
-                                "maximum": 10,
-                                "default": 2
-                            },
-                            "three": {
-                                "type": "string",
-                                "enum": [
-                                    "foo",
-                                    "bar",
-                                    "baz"
-                                ]
-                            },
-                            "four": {
-                                "type": "string",
-                                "maxLength": 5
-                            },
-                            "five": {
-                                "type": "string",
-                                "default": "five"
-
-                            },
-                            "six": {
-                                "type": "number",
-                                "default": 6
-                            },
-                            "seven": {
-                                "type":"object",
-                                "properties": {
-                                    "alpha": {
-                                        "type": "string",
-                                        "pattern": "^[a-zA-Z0-9_]*$",
-                                        "default": "alpha"
-                                    }
-                                }
-                            },
-                            "eight": {
-                                "type": "integer",
-                                "default": 8
-                            },
-                            "nine": {
-                                "type": "boolean",
-                                "default": true
-                            },
-                            "ten": {
-                                "type": "string",
-                                "default": "10"
-                            }
-                        }
+                        "type": "string",
+                        "default": "eleven"
                     },
                     "twelve": {
                         "type": "integer",
@@ -379,342 +246,21 @@
                             "baz"
                         ]
                     },
-                        "four": {
-                            "type": "string",
-                            "maxLength": 5
-                        },
-                        "five": {
-                            "type": "string",
-                            "default": "five"
-
-                        },
-                        "six": {
-                            "type": "number",
-                            "default": 6
-                        },
-                        "seven": {
-                            "type":"object",
-                            "properties": {
-                                "alpha": {
-                                    "type": "string",
-                                    "pattern": "^[a-zA-Z0-9_]*$",
-                                    "default": "alpha"
-                                },
-                                "one": {
-                                    "type": "string",
-                                    "pattern": "^[a-zA-Z0-9_]*$",
-                                    "default": "foo_123"
-                                },
-                                "two": {
-                                    "type": "number",
-                                    "maximum": 10,
-                                    "default": 2
-                                },
-                                "three": {
-                                    "type": "string",
-                                    "enum": [
-                                        "foo",
-                                        "bar",
-                                        "baz"
-                                    ]
-                                },
-                                "four": {
-                                    "type": "string",
-                                    "maxLength": 5
-                                },
-                                "five": {
-                                    "type": "string",
-                                    "default": "five"
-
-                                },
-                                "six": {
-                                    "type": "number",
-                                    "default": 6
-                                },
-                                "seven": {
-                                    "type":"object",
-                                    "properties": {
-                                        "alpha": {
-                                            "type": "string",
-                                            "pattern": "^[a-zA-Z0-9_]*$",
-                                            "default": "alpha"
-                                        }
-                                    }
-                                },
-                                "eight": {
-                                    "type": "integer",
-                                    "default": 8
-                                },
-                                "nine": {
-                                    "type": "boolean",
-                                    "default": true
-                                },
-                                "ten": {
-                                    "type": "string",
-                                    "default": "10"
-                                }
-                            }
-                        },
-                        "eight": {
-                            "type": "integer",
-                            "default": 8
-                        },
-                        "nine": {
-                            "type": "boolean",
-                            "default": true
-                        },
-                        "ten": {
-                            "type": "string",
-                            "default": "10"
-                        },
-                        "eleven": {
-                            "type": "object",
-                            "properties": {
-                                "alpha": {
-                                    "type": "string",
-                                    "pattern": "^[a-zA-Z0-9_]*$",
-                                    "default": "alpha"
-                                },
-                                "one": {
-                                    "type": "string",
-                                    "pattern": "^[a-zA-Z0-9_]*$",
-                                    "default": "foo_123"
-                                },
-                                "two": {
-                                    "type": "number",
-                                    "maximum": 10,
-                                    "default": 2
-                                },
-                                "three": {
-                                    "type": "string",
-                                    "enum": [
-                                        "foo",
-                                        "bar",
-                                        "baz"
-                                    ]
-                                },
-                                "four": {
-                                    "type": "string",
-                                    "maxLength": 5
-                                },
-                                "five": {
-                                    "type": "string",
-                                    "default": "five"
-
-                                },
-                                "six": {
-                                    "type": "number",
-                                    "default": 6
-                                },
-                                "seven": {
-                                    "type":"object",
-                                    "properties": {
-                                        "alpha": {
-                                            "type": "string",
-                                            "pattern": "^[a-zA-Z0-9_]*$",
-                                            "default": "alpha"
-                                        }
-                                    }
-                                },
-                                "eight": {
-                                    "type": "integer",
-                                    "default": 8
-                                },
-                                "nine": {
-                                    "type": "boolean",
-                                    "default": true
-                                },
-                                "ten": {
-                                    "type": "string",
-                                    "default": "10"
-                                }
-                            }
-                        },
-                        "twelve": {
-                            "type": "integer",
-                            "default": 5,
-                            "minimum": 1,
-                            "maximum": 10
-                        },
-                        "thirteen": {
-                            "type": "object",
-                            "properties": {
-                            "one": {
-                                "type": "string",
-                                "pattern": "^[a-zA-Z0-9_]*$",
-                                "default": "foo_123"
-                            },
-                            "two": {
-                                "type": "number",
-                                "maximum": 10,
-                                "default": 2
-                            },
-                            "three": {
-                                "type": "string",
-                                "enum": [
-                                    "foo",
-                                    "bar",
-                                    "baz"
-                                ]
-                            },
-                            "four": {
-                                "type": "string",
-                                "maxLength": 5
-                            },
-                            "five": {
-                                "type": "string",
-                                "default": "five"
-
-                            },
-                            "six": {
-                                "type": "number",
-                                "default": 6
-                            },
-                            "seven": {
-                                "type":"object",
-                                "properties": {
-                                    "alpha": {
-                                        "type": "string",
-                                        "pattern": "^[a-zA-Z0-9_]*$",
-                                        "default": "alpha"
-                                    },
-                                    "one": {
-                                        "type": "string",
-                                        "pattern": "^[a-zA-Z0-9_]*$",
-                                        "default": "foo_123"
-                                    },
-                                    "two": {
-                                        "type": "number",
-                                        "maximum": 10,
-                                        "default": 2
-                                    },
-                                    "three": {
-                                        "type": "string",
-                                        "enum": [
-                                            "foo",
-                                            "bar",
-                                            "baz"
-                                        ]
-                                    },
-                                    "four": {
-                                        "type": "string",
-                                        "maxLength": 5
-                                    },
-                                    "five": {
-                                        "type": "string",
-                                        "default": "five"
-
-                                    },
-                                    "six": {
-                                        "type": "number",
-                                        "default": 6
-                                    },
-                                    "seven": {
-                                        "type":"object",
-                                        "properties": {
-                                            "alpha": {
-                                                "type": "string",
-                                                "pattern": "^[a-zA-Z0-9_]*$",
-                                                "default": "alpha"
-                                            }
-                                        }
-                                    },
-                                    "eight": {
-                                        "type": "integer",
-                                        "default": 8
-                                    },
-                                    "nine": {
-                                        "type": "boolean",
-                                        "default": true
-                                    },
-                                    "ten": {
-                                        "type": "string",
-                                        "default": "10"
-                                    }
-                                }
-                            },
-                            "eight": {
-                                "type": "integer",
-                                "default": 8
-                            },
-                            "nine": {
-                                "type": "boolean",
-                                "default": true
-                            },
-                            "ten": {
-                                "type": "string",
-                                "default": "10"
-                            },
-                            "eleven": {
-                                "type": "object",
-                                "properties": {
-                                    "alpha": {
-                                        "type": "string",
-                                        "pattern": "^[a-zA-Z0-9_]*$",
-                                        "default": "alpha"
-                                    },
-                                    "one": {
-                                        "type": "string",
-                                        "pattern": "^[a-zA-Z0-9_]*$",
-                                        "default": "foo_123"
-                                    },
-                                    "two": {
-                                        "type": "number",
-                                        "maximum": 10,
-                                        "default": 2
-                                    },
-                                    "three": {
-                                        "type": "string",
-                                        "enum": [
-                                            "foo",
-                                            "bar",
-                                            "baz"
-                                        ]
-                                    },
-                                    "four": {
-                                        "type": "string",
-                                        "maxLength": 5
-                                    },
-                                    "five": {
-                                        "type": "string",
-                                        "default": "five"
-
-                                    },
-                                    "six": {
-                                        "type": "number",
-                                        "default": 6
-                                    },
-                                    "seven": {
-                                        "type":"object",
-                                        "properties": {
-                                            "alpha": {
-                                                "type": "string",
-                                                "pattern": "^[a-zA-Z0-9_]*$",
-                                                "default": "alpha"
-                                            }
-                                        }
-                                    },
-                                    "eight": {
-                                        "type": "integer",
-                                        "default": 8
-                                    },
-                                    "nine": {
-                                        "type": "boolean",
-                                        "default": true
-                                    },
-                                    "ten": {
-                                        "type": "string",
-                                        "default": "10"
-                                    }
-                                }
-                            },
-                            "twelve": {
-                                "type": "integer",
-                                "default": 5,
-                                "minimum": 1,
-                                "maximum": 10
-                            }
-                        }
+                    "four": {
+                        "type": "string",
+                        "maxLength": 5
+                    },
+                    "five": {
+                        "type": "string",
+                        "default": "five"
+                    },
+                    "six": {
+                        "type": "number",
+                        "default": 6
+                    },
+                    "seven": {
+                        "type": "string",
+                        "default": "seven"
                     }
                 }
             }
@@ -722,8 +268,49 @@
     },
     "data": {
         "one": "foo",
+        "two": 2,
         "three": "bar",
         "four": "four",
-        "five": "foobarbaz"
+        "five": "foobarbaz",
+        "six": 6,
+        "seven": {
+            "one": "foo_123",
+            "two": 5,
+            "three": "baz",
+            "four": "abcd",
+            "five": "cat",
+            "six": 36,
+            "seven": {
+                "alpha": "alpha"
+            },
+            "eight": 8,
+            "nine": false,
+            "ten": "10"
+        },
+        "eight": 8,
+        "nine": true,
+        "ten": "11",
+        "eleven": {
+            "one": "one",
+            "three": "foo",
+            "five": "five",
+            "seven": "seven",
+            "nine": true
+        },
+        "twelve": 9,
+        "thirteen": {
+            "one": "foo_123",
+            "three": "bar",
+            "five": "five",
+            "seven": "seven",
+            "nine": false,
+            "eleven": "eleven"
+        },
+        "fourteen": {
+            "one": "one",
+            "two": 2,
+            "three": "foo",
+            "five": "five"
+        }
     }
 }
