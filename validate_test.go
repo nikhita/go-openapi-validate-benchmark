@@ -17,20 +17,20 @@ type validateTest struct {
 }
 
 func BenchmarkOpenAPIValidate(b *testing.B) {
-	testSchema, _ := ioutil.ReadFile("testdata/schema.json")
-	var testData validateTest
-	if err := json.Unmarshal(testSchema, &testData); err != nil {
+	testFile, _ := ioutil.ReadFile("testdata/schema.json")
+	var test validateTest
+	if err := json.Unmarshal(testFile, &test); err != nil {
 		b.Error(err)
 	}
 
-	err := spec.ExpandSchema(testData.Schema, nil, nil)
+	err := spec.ExpandSchema(test.Schema, nil, nil)
 	if err != nil {
 		b.Errorf("should expand clearly: %v", err)
 	}
-	validator := validate.NewSchemaValidator(testData.Schema, nil, "data", strfmt.Default)
+	validator := validate.NewSchemaValidator(test.Schema, nil, "data", strfmt.Default)
 
 	for i := 0; i < b.N; i++ {
-		result := validator.Validate(testData.Data)
+		result := validator.Validate(test.Data)
 		if result.AsError() != nil {
 			b.Error(result.AsError())
 		}
@@ -39,15 +39,27 @@ func BenchmarkOpenAPIValidate(b *testing.B) {
 }
 
 func BenchmarkOpenAPIMarshal(b *testing.B) {
-	testSchema, _ := ioutil.ReadFile("testdata/schema.json")
-	var testData validateTest
+	testFile, _ := ioutil.ReadFile("testdata/schema.json")
+	var test validateTest
 
+	if err := json.Unmarshal(testFile, &test); err != nil {
+		b.Error(err)
+	}
+
+	testData, err := json.Marshal(test.Data)
+	if err != nil {
+		b.Error(err)
+	}
+
+	// Now marshal and unmarshal only the "data" part since
+	// unmarshaling of the schema does not really matter as it is
+	// only done once per CRD not once per CR.
 	for i := 0; i < b.N; i++ {
-		if err := json.Unmarshal(testSchema, &testData); err != nil {
+		if err := json.Unmarshal(testData, &test.Data); err != nil {
 			b.Error(err)
 		}
 
-		if _, err := json.Marshal(testData); err != nil {
+		if _, err := json.Marshal(test.Data); err != nil {
 			b.Error(err)
 		}
 	}
