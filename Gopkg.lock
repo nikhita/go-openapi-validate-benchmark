@@ -88,7 +88,7 @@
 [[projects]]
   branch = "release-branch.go1.6"
   name = "golang.org/x/net"
-  packages = ["context","idna"]
+  packages = ["context"]
   revision = "62685c2d7ca23c807425dca88b11a3e2323dab41"
 
 [[projects]]
@@ -103,9 +103,15 @@
   packages = ["."]
   revision = "eb3733d160e74a9c7e442f435eb3bea458e1d19f"
 
+[[projects]]
+  branch = "release-1.6"
+  name = "k8s.io/apimachinery"
+  packages = ["pkg/util/json"]
+  revision = "35be0db31bd6e5635ef6366708dc2b137392f6a2"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "be0e0b0b6c89167d572b39d431a1e97a9cb2bd64455748370265ed1f51deedf5"
+  inputs-digest = "abc3100c2bf83d6b2a73d9b346b54ee86ece658274b0b5dab338c04b8972425d"
   solver-name = "gps-cdcl"
   solver-version = 1
