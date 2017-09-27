@@ -143,14 +143,16 @@ func (o *objectValidator) validatePatternProperty(key string, value interface{},
 	succeededOnce := false
 	var patterns []string
 
-	for k, schema := range o.PatternProperties {
-		if match, _ := regexp.MatchString(k, key); match {
-			patterns = append(patterns, k)
-			matched = true
-			validator := NewSchemaValidator(&schema, o.Root, o.Path+"."+key, o.KnownFormats)
+	if len(o.PatternProperties) != 0 {
+		for k, schema := range o.PatternProperties {
+			if match, _ := regexp.MatchString(k, key); match {
+				patterns = append(patterns, k)
+				matched = true
+				validator := NewSchemaValidator(&schema, o.Root, o.Path+"."+key, o.KnownFormats)
 
-			res := validator.Validate(value)
-			result.Merge(res)
+				res := validator.Validate(value)
+				result.Merge(res)
+			}
 		}
 	}
 
