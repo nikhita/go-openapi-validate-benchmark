@@ -1,5 +1,7 @@
 bench0
 bench1
 bench2
+bench3
 cpu.out
+mem0.out
 go-openapi-validate-benchmark.test

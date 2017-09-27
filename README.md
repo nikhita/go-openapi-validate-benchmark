@@ -23,10 +23,9 @@ BenchmarkOpenAPI-4   	    3000	    402998 ns/op	  256750 B/op	    1631 allocs/op
 benchmark              old ns/op     new ns/op     delta
 BenchmarkOpenAPI-4     60140         402998        +570.10%
 
-benchmark              old allocs     new allocs     delta
-BenchmarkOpenAPI-4     284            1631           +474.30%
+benchmark              old allocs    new allocs    delta
+BenchmarkOpenAPI-4     284           1631          +474.30%
 
 benchmark              old bytes     new bytes     delta
 BenchmarkOpenAPI-4     12226         256750        +2000.03%
-
 ```

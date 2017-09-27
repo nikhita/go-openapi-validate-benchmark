@@ -27,7 +27,7 @@ func BenchmarkOpenAPIValidate(b *testing.B) {
 	if err != nil {
 		b.Errorf("should expand clearly: %v", err)
 	}
-	validator := validate.NewSchemaValidator(test.Schema, nil, "data", strfmt.Default)
+	validator := validate.NewSchemaValidator(test.Schema, nil, "", strfmt.Default)
 
 	for i := 0; i < b.N; i++ {
 		result := validator.Validate(test.Data)
